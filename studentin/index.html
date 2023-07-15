@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Sign in</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+                <!--Student login-->
+                <div class="col-lg-6">
+  
+                <form action="http://localhost/sin.php" method="post" id="login-form">
+                    <h1 class="assignment-heading-loginform">Assignments</h1>
+                    <h3 class="student-login">Student Login</h3>
+                  <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input 
+                           id="name" 
+                           type="text" 
+                           name="name"
+                           class="form-control"
+                           placeholder="Enter your name"
+                           required
+                           > 
+                    </input>
+                  </div>
+                  <div class="form-group">
+                  <label id="email-label" for="email">Email</label>
+                  <input
+                         id="email"
+                         type="email"
+                         name="email"
+                         class="form-control"
+                         placeholder="Enter your Email"
+                         required
+                         >
+                  </input>
+                </div>
+                <div class="form-group">
+                    <label id="eroll_label" for="enrollment_number">University Enrollment Number</label>
+                    <input 
+                           id="enrollment_number" 
+                           type="text" 
+                           name="enrollment_number"
+                           class="form-control"
+                           placeholder="Enter your enrollment number"
+                           required
+                           > 
+                    </input>
+                  </div>
+                <div class="form-group">
+                  <label id="dropdown-label" for="dropdown">Branch</label>
+                  <select 
+                         id="dropdown"
+                         name="role"
+                         class="form-control" 
+                         required
+                         >
+                  <option disabled selected value>Select Branch</option>
+                  <option value="CSE">CSE</option>
+                  <option value="IT">IT</option>
+                  <option value="ECE">ECE</option>
+                  <option value="EEE">EEE</option>
+                  <option value="other">Other</option>
+                </select>
+               </div> 
+               <div class="form-group">
+                 <button type="submit" id="submit" class="submit-button">
+                   
+                    Student Login
+                   
+                </button>
+               </div>
+              
+                </form>
+            </div>
+             
+</body>
+</html>
